@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AES Şifreleme Uygulaması</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>AES Şifreleme Uygulaması</h1>
+	<div class="container">
+		<label for="plain-text">Metin:</label>
+		<textarea id="plain-text" rows="5"></textarea>
+		<label for="encryption-key">Şifreleme Anahtarı:</label>
+		<input type="password" id="encryption-key">
+		<button id="encrypt-btn" onclick="encrypt()">Şifrele</button>
+		<label for="encrypted-text">Şifreli Metin:</label>
+		<textarea id="encrypted-text" rows="5" readonly></textarea>
+		<button id="decrypt-btn" onclick="decrypt()">Çöz</button>
+		<label for="decrypted-text">Çözülmüş Metin:</label>
+		<textarea id="decrypted-text" rows="5" readonly></textarea>
+	</div>
+	<script src="crypto-js.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
